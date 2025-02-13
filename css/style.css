@@ -1,0 +1,1341 @@
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        scroll-behavior: smooth ;
+    }
+    body{
+        font-family: "Poppins", sans-serif;
+        display: inline-block;
+        width: 100% ;
+    }
+    .header-main{
+        width: 100%;
+        float: left;
+        position: sticky;
+        top: -150px ;
+        transition: 0.5s;
+        background-color: white;
+        z-index: 999 ;
+    }
+    .header-main.sticky-header{
+        position: fixed;
+        top: 0;
+        left: 0 ;
+        box-shadow: 0 0 10px 2px gray ;
+    }
+    .header-main.sticky-header .header{
+        display: none;
+    }
+    .headertop{
+        width: 100%;
+        float: left;
+        padding: 10px  20px ;
+    }
+    .logo{
+        float: left;
+
+    }
+    .logo img{
+        width: 250px ;
+        margin-right: 40px ;
+
+    }
+    .topmenu1{
+        float: left;
+        margin-top: 15px;
+    }
+    .topmenu1 ul li{
+        display: inline-block;
+        margin-right: 20px ;
+        position: relative;
+    }
+    .topmenu1 ul li a{
+    text-decoration: none ;
+    color:gray;
+    font-size: 12px ;
+    }
+    .topmenu1 ul li a:hover{
+    color: black;
+    }
+    .topmenu1 ul li:hover .dropdown{
+    display: block;
+    }
+    b{
+        color: #1246ab;
+        font-size: 14px ;
+    }
+    .topmenu2{
+    float: right;
+    margin-top: 15px ;
+    }
+    .topmenu2 ul li{
+        display: inline-block;
+        margin-left: 20px ;
+        border-left: 1px solid gray ;
+    padding-left: 20px ;
+    }
+    .topmenu2 ul li:hover{
+    color: black;
+    }
+    .topmenu2 ul li .border{
+    border: none;
+    }
+
+    .topmenu2 ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 12px ;
+    }
+    .topmenu2 ul li a:hover{
+        color: black;
+    }
+    ul .dropdown{
+        width:400px   ;
+        position: absolute;
+        left: 0 ;
+        top:40px  ;
+        box-shadow:  0 0 2px black;
+        background-color: white ;
+        display: none ;
+    }
+    .dropdownlogo img{
+    width: 100%; 
+    margin-bottom: 10px ;  
+    }
+    .dropdown1{
+        width:50%;
+    float: left;
+    padding:  20px  10px  ; 
+    
+    }
+    .dropdown2 a{
+    background-color: white;
+    padding: 5px 10px ;
+    border: 1px solid gray;
+    color: black!important ;
+    }
+    .dropdown2 a:hover{
+        background-color: rgb(226, 226, 226); 
+        }
+    .dropdown2 p{
+        color: gray;
+        font-size: 12px ;
+        margin-bottom: 10px ;
+    }
+
+    .border{
+        border-left: none !important;
+    }
+    .dropdown1 .mon{
+        color: gray;
+        font-size: 12px ;
+        margin-bottom: 5px ;
+    }
+    .dropdown1 .call{
+        display: block;
+        margin: 10px 0 ;
+    }
+    .dropdown .rose b{
+        color: gray;
+    }
+    .dropborder{
+        width: 100%;
+        float: left;
+        
+        border-bottom: 1px solid gray;
+    }
+    .dropdown1 a i{
+        color: #1246ab;
+        margin-right: 8px ;
+    }
+    .bottom{
+    border-bottom: none ;
+    }
+    .dropdownbottom{
+        width: 100%;
+        text-align: center;
+        padding: 20px 0 ;
+    background-color: aliceblue; 
+    margin-top: 300px ;
+    text-decoration:underline ;
+    color: gray ;
+
+    }
+    .header{
+        width: 100%;
+        float: left;
+        background-color: rgba(18, 70, 171, 1);
+        padding: 0  20px ;
+        padding-bottom: 10px ;
+    }
+
+    .headermenu{
+        margin-top: 20px ;
+        float: left;
+    }
+    .headermenu ul li{
+    display: inline-block;
+    margin-right: 20px ; 
+   
+    }
+    .headermenu ul li:hover .box1{
+       display: block;
+        }
+    
+    .headermenu ul li a{
+    text-decoration: none;
+    color: white ;
+    font-size: 13px ;
+        
+    }
+    .headermenu ul li a:hover{
+    color: rgb(203, 202, 202);
+    }
+    .header .love{
+    float:right ;   
+    }
+    .header .love a {
+    width: 40px ;
+    height: 40px ;
+    border-radius: 50%;
+    border: 1px solid white ;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px ;
+    margin-left: 20px ;
+    margin-top: 12px ;
+    position: relative;
+    }
+    .header .love a i{
+        color : white ;
+    }
+    .header .love a i:hover{
+        color : rgb(209, 207, 207);
+    }
+    .header .searchbar{
+    float: left ;
+    position: relative;
+    }
+    .searchbar input{
+        padding: 7px ; 
+        width: 250px ;
+        margin-top: 15px ;   
+    }
+    .headermenu li i {
+        color: gray ;
+    }
+    .searchbar i{
+        position: relative;
+    right: 30px;
+    top: 1px;
+    color: gray;
+    }
+    .love a span{
+    width: 15px ;
+    height: 15px ; 
+    border-radius:50%;
+    display: inline-block; 
+    color: black;
+    background-color: white;
+    text-align: center;
+    line-height: 15px ;
+    font-size: 10px ;
+    position:absolute ;
+    left: 30px  ;
+    top: -2px  ; 
+    }
+
+ul .box1{
+    width: 98%;
+    float: left;
+    z-index: 2;
+    position: absolute;
+    left: 0 ;
+    right: 0;
+    top:130px  ;
+    height: 480px ;
+    margin: auto;
+    background-color:white ;
+    box-shadow: 5px solid black;
+    display: none;
+
+}
+ul .blue{
+    background-color: rgba(18, 70, 171, 1); 
+}
+.box2{
+    width: 20%;
+    float: left;
+    height: 100%;
+}
+.box3{
+    width: 100%;
+    float: left;
+    height: 100%;
+margin-left: 10px ;
+}
+
+.dropimage img{
+width: 100%;
+height:100%;
+float: left;
+
+}
+.tiles{
+    padding-left:20px  ;
+    
+}
+.tiles ul li{
+    float: left;
+    width: 100%;
+    margin-top: 10px ;
+}
+.tiles ul li a{
+    color:gray;
+}
+.wooden{
+    margin-bottom: 40px ;
+}
+.tiles ul li a:hover{
+   color: #1246ab;
+}
+.tiles h4:hover{
+    color: #1246ab; 
+}
+
+.mainbox{
+width: 100%;
+float: left;
+height: 40px ;
+color: white ;
+z-index: 2;
+}
+.mainbox:hover{
+background-color: white ;  
+color: black;  
+}
+    
+.floortext{
+    width: 90%;
+    float: left;  
+}
+.floortext p{
+    margin-left: 50px ;
+    margin-top: -30px ;
+
+}
+.floortext img{
+    width: 15%;
+padding: 5px ;
+
+}
+
+.flooricon{
+    width: 10%;
+    float: right; 
+}
+.flooricon i{
+    margin-top: 10px ;
+
+}
+.banner{
+    width: 100%;
+    float: left;
+    height: 350px ;
+    background-color:#2859b8;
+    margin-bottom: 150px ;
+    
+}
+.banner1{
+    width: 66.6%;
+    float: left;
+   padding:0  10px ;
+}
+.bannertext{
+    width: 45%;
+    float: left;
+    background-color: #d0bea3;
+    height: 450px ;
+    padding: 50px ;
+    
+    color: white ;
+}
+.bannerimage{
+width: 55%;
+float: left;
+height: 450px ;
+}
+.bannerimage img{
+    width: 100%;
+    height: 450px ;
+}
+.bannertext h1{
+    font-size: 40px ;
+    color: white;
+    margin-bottom: 20px ;
+}
+.bannertext p{
+margin-top: 20px ;
+margin-bottom: 20px ;
+}
+.banner span{
+    color:  #1246ab;
+}
+.bannertext a{
+text-decoration: none;
+color: white;
+font-size: 12px ;
+font-weight: 700;
+background-color: #2859b8;
+padding: 10px 20px ;
+}
+.bannertext a:hover{ 
+    background-color: #3161c0;  
+}
+.banner2{
+    width: 33.3%;
+    float: left;
+    color: white ;
+   padding: 0 10px ;
+} 
+
+.service{
+position: relative;
+
+}
+.service img{
+    width: 100%;
+    height: 250px ;
+    float: left;
+    padding-bottom: 10px ;
+}
+.servicetext{
+width: 100%;
+
+float: left;
+padding:  20px ;
+position: absolute;
+left: 0 ;
+right: 0;
+
+}
+.servicetext h3{
+font-size: 30px ;
+margin-bottom : 10px ;
+}
+.servicetext p{
+width: 180px ;
+line-height: 25px ;
+margin-bottom: 20px ;
+}
+.servicetext a{
+    text-decoration: none;
+color: white;
+font-weight: 700;
+font-size: 12px ;
+background-color: #2859b8 ;
+padding: 10px 20px ;
+}
+.servicetext a:hover{ 
+    background-color: #3161c0;  
+}
+.cartimage{
+width: 100%;
+float: left;
+padding-top: 10px ;
+position: relative;
+}
+.cartimage img{
+    width: 100%;
+    float: left;
+    height: 190px ;
+}
+.carttext {
+    position: absolute;
+    left: 0 ;
+top: 0 ;
+padding: 20px ;
+
+}
+.carttext h3{
+    font-size: 30px ;
+    margin-bottom : 10px ;
+    }
+    .carttext p{
+    width: 180px ;
+    line-height: 25px ;
+    margin-bottom: 20px ;
+    }
+
+ .circlebox{
+    width: 100%;
+    float: left;
+ }
+ .circlebox1{
+    width: 16.6%;
+    float: left;
+}
+.circlebox2{
+width: 100%;
+float: left;
+text-align: center;
+margin-bottom: 20px ;
+transition: 0.5s;
+
+}
+
+.circleimage img{
+    width: 65%;
+    padding: 10px ;
+    transition: 0.5s;
+   
+}
+.circleimage:hover img{
+    transform: scale(1.2);
+    
+}
+.circletext{
+    text-align: center;
+}
+.circletext h3{
+    font-size: 15px ;
+font-weight:600;
+}
+.circletext p{
+color: gray;
+margin-top: 8px ;
+font-size: 15px ;
+font-weight: 100;
+}
+.circlebox h2{
+    margin-left: 10px ;
+    margin-bottom: 20px ;
+}
+.product1{
+    width: 100%;
+    float: left;
+    margin-top: 50px ;
+padding: 10px ;
+margin-bottom: 50px     ;
+}
+.product1 h2{
+    margin-bottom: 20px ;
+}
+.product2{
+    width: 20%;
+    float: left;
+}
+.product3{
+width: 100%;
+float: left;  
+border: 1px solid gray ; 
+padding: 10px ; 
+}
+.productimage{
+    position: relative;
+    
+}
+.productimage img{
+    width: 100%;
+   
+    margin-bottom: 10px;
+}
+.producttext a{
+    text-decoration: none ;
+    color: black;
+    font-size: 15px ;
+    font-weight: 700;
+}
+.producttext a:hover{
+   color: gray ;
+}
+.producttext h5 i{
+ color: var(--wd-primary-color);
+}
+.rating{
+    color: darkorange;
+    margin-top: 5px ;
+    margin-bottom: 5px ;
+}
+.producttext ul li{
+ display: inline-block;
+ color: gray;
+ margin-top: 5px ;
+ margin-bottom: 5px ;
+}
+.producttext .button{
+    width: 100%;
+   float: left;
+   height: 40px ;
+    background-color: #2859b8;
+    color: white ;
+}
+.compare{
+background-color: white;
+box-shadow: 0 0 1px gray;
+right: 0;
+top: 10px;
+display: none;
+
+}
+.product3:hover .compare {
+    display: block;
+}  
+.back{
+    display: none;
+} 
+.product3:hover .back{
+    display: block;
+}
+.product3:hover .front{
+    display: none;
+}
+.compare i{
+    display:block;
+   width:40px;
+  height: 25px ;
+   right: 0;
+   top: 0;
+   left: auto;
+   margin-top: 10px ;
+   text-align: center;
+}
+
+.buttontext1{
+    width: 40%;
+    float: left;
+    padding-left: 10px ;
+}
+.buttontext1 ul li{
+display:inline-block;
+color: white;
+margin-top: 10px ;
+margin-right: 10px ;
+}
+.buttontext2{
+width: 60%;
+float:right; 
+text-align: center;   
+}
+.buttontext2 h5{
+     margin-top: 12px;
+ }
+.productend{
+width: 100%;
+float: left;
+margin-top: 5px;
+}
+.productend label{
+    font-size: 13px ;
+    font-weight: 600;
+}
+.productend span{
+    color: gray;
+}
+.ratingcolor{
+    color: gray;
+}
+.productimage .new{
+    position: absolute;
+ 
+    top: 0;
+    margin-top: 10px ;
+
+ 
+}
+.new2{
+    background-color:#1246ab ;
+    text-align: center;
+    display: block;
+    color: white;
+    padding: 4px 5px ;
+    font-size: 12px ;
+
+   
+}
+.new3{
+    background-color: #438E44;
+
+    margin-top: 10px ;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    padding: 4px 5px  ;
+}
+.color{
+    background-color: #438E44;
+font-size: 10px; 
+padding: 4px 5px  ;  
+}
+.red{    
+    background-color: #E22D2D;
+}
+.brand{
+width: 100%;
+float: left;  
+margin-bottom: 50px ;  
+}
+.brand1{
+    width: 25%;
+    float: left;
+}
+.brand2{
+    width: 100%;
+    float: left;
+    padding:  0 10px ;
+}
+.brandimage{
+    width: 20%;
+    float: left;
+}
+.brandtext{
+    width: 80%;
+    float: left;
+    padding-left: 20px ;
+    
+}
+.brandtext h4{
+margin-bottom: 15px ;
+margin-top: 5px ;
+font-weight: 600;
+font-size: 15px;
+}
+.brandtext p{
+    color: gray;
+    
+}
+.mainidea{
+      width: 100%;
+      float: left;
+      padding: 50px 0 ;
+background-color: #f1f3f8;
+    }
+    .smallidea{
+       padding: 10px ;
+        width: 50%;
+        float: left;
+    }
+    .ideaimage{
+      position: relative;
+    }
+    .ideaimage img{
+        width: 100%;
+       
+    }
+    .smallidea h2{
+        margin-bottom: 20px ;
+    }
+    .smallidea .small2{
+        width: 33.3%;
+        float: left;
+    }
+    .small2 .product3{
+    background-color: white ;  
+    
+    }
+    .servicemain{
+        width: 100%;
+        float: left;
+        background-color: white;
+        margin-top: 30px ;
+       
+    }
+    .serviceimage{
+        width: 30%;
+        float: left;
+    }
+    .serviceimage img{
+        width: 100%;
+   
+    }
+ .ourservicetext{
+    width: 70%;
+    float: right;
+    padding: 20px;
+}
+.ourservicetext h6{
+    color: #0b58f3;
+    margin-bottom: 10px ;
+    margin-top: 20px;
+}
+.ourservicetext h2{
+    font-size: 30px ;
+    margin-bottom: 10px;     
+}
+.ourservicetext p{
+font-size: 13px ;
+color: gray;
+line-height: 25px ;
+}
+.circle span{
+    width: 25px ;
+    height: 25px ;
+    border-radius: 50%;
+    background-color: #1246ab;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px ;
+    position: relative;
+}
+.circle span:hover .downbox{
+display: block;
+}
+.circle{
+    position: absolute;
+    left: 71%;
+    top: 31%;
+}
+.circle span .circle1{
+    width: 10px ;
+    height: 10px ;
+    border-radius: 50%;
+    background-color:white;
+    display: inline-block;
+}
+
+.other{
+left: 37%;
+top: 51%;
+}
+.others{
+    left: 43%;
+    top: 74%;     
+}
+.downbox{
+    width: 200px ;
+    background-color: white;
+    height: 365px ;
+    position: absolute;
+    right: 40px ;
+    top: -50px  ;
+    text-align: center;
+    display: none;
+    z-index: 2;
+}
+.downbox a{
+text-decoration: none;
+color: black;
+font-weight: 600;
+}
+.downbox .star{
+    color: darkorange;
+    padding: 5px 0 ;
+}
+.downbox ul li{
+   display: inline-block;
+   margin-right: 5px ;
+   padding-bottom: 5px ;
+}
+.downbox .cart{
+background-color: #1246ab;
+color: white;
+font-size: 10px ;
+padding: 8px 16px ;
+padding-bottom: 10px;
+}
+.plumbermachine{
+    width: 100%;
+    float: left;
+padding: 0 10px ;
+margin-top: 50px ;
+margin-bottom: 50px ;
+}
+.product3.machine {
+    height: 454.5px;
+    border: none ;
+   padding: 0;
+}
+.product3.machine p{
+  font-size: 14px ;
+  line-height: 20px ;
+}
+.product3.machine h4{
+  margin-top: 20px ;
+  font-size: 20px ;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 10px ;
+}
+.floorbox{
+    margin-top: 10px ;
+    margin-left: -5px ;
+}
+.floortext{
+    margin-top: 10px ;
+}
+.floorbox p:hover{
+    color: #0656f7;
+    
+}
+.floorbox .hand{
+    color: red;
+}
+.furniture{
+    width: 100%;
+    float: left;
+    margin-top: 50px ;
+    margin-bottom: 50px ;
+}
+.furniture1{
+    width: 33.3%;
+    float: left;
+    padding: 10px ;
+}
+.furniture2{
+    width: 100%;
+    float: left;
+}
+.furniture h2{
+    margin-left: 10px ;
+    margin-bottom: 20px ;
+}
+.furnitureimage{
+    width: 100%;
+    float: left;
+    position: relative;
+   height: 260px ;
+}
+.furnitureimage img{
+    width: 100%;
+    float: left;
+   height: 100%;
+}
+.furnituretext ul{
+    width: 100%;
+    float: left;
+    margin-top: 10px ;
+    margin-bottom: 10px ;
+}
+.furnituretext ul li{
+    display: inline-block;
+margin-right: 10px ;
+}
+.furnituretext ul li a{
+   text-decoration: none;
+   color: black;
+}
+.furnituretext .japanese{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px ;
+    font-size: 20px ;
+    font-weight: 600;
+}
+.furnituretext .japanese:hover{
+  color: gray;
+}
+.furnituretext p{
+    margin-top: 10px;
+    margin-bottom: 10px ;
+    font-size: 13px ;
+    line-height: 20px;
+    color: gray;
+}
+.furnituretext .continue{
+text-decoration: none;
+font-size: 12px ;
+color:#1246ab;
+font-weight: 600;
+}
+.furnituretext .continue:hover{
+    color:#5975ad;
+    
+    }
+.mackay{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(13, 13, 13, 0.116) 11%, rgba(253, 253, 253, 0.025) 29%);  
+    position: absolute;
+    left: 0;
+top: 0;
+
+
+}
+.mr{
+    padding-top: 230px ;
+    padding-left: 10px  ;
+
+}
+.inbox i span{
+    width: 15px ;
+    height: 15px ;
+    border-radius: 50%;
+display: inline-block;
+background-color: #438E44;
+text-align: center;
+line-height: 15px ;
+font-size: 10px ;
+position: absolute;
+left: 8px ;
+top: -6px ;
+
+}
+.inbox i{
+    font-size: 20px ;
+    color: white!important ;
+    position: relative;
+
+    }
+
+.inbox{
+padding-left: 330px ;
+
+}
+.mackay span{
+    width: 20px ;
+    height: 20px ;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+
+}
+.mackay a{
+  text-decoration: none;
+ color: white ;
+}
+.mackay i{
+    color: gray;
+    margin-right: 10px ;
+}
+.mackay span img{
+    width: 100%;
+}
+.view{
+    width: 100%;
+float: left;
+padding: 0 10px ;
+margin-bottom: 50px ;
+}
+.view h2{
+    
+    margin-bottom: 20px ;
+}
+.view1{
+    width: 20%;
+    float: left;
+}
+.view2{
+    width: 100%;
+    float: left;
+    border: 1px solid gray;
+}
+.viewimage{
+    width: 40%;
+    float: left;
+    padding: 10px ;
+}
+.viewimage img{
+    width: 100%;
+    float: left;
+}
+.viewtext{
+    width: 60%;
+    float: left;
+}
+.viewtext ul{
+    float: left;
+}
+.viewtext ul li{
+display: inline-block;
+margin-right: 10px ;
+color: gray ;
+}
+.viewtext h4{ 
+    margin-top: 10px ;
+   
+}
+.viewtext .star i{
+    font-size: 14px ;
+    color: gray;
+    padding: 10px 0 ;
+}
+.companytext{
+    width: 100%;
+    float: left;
+    padding: 0 10px ;
+    background: #f1f3f8;
+    padding-top: 50px ;
+    padding-bottom: 50px ;
+}
+.companytext h1{
+    color: #1246ab;
+}
+.companytext h4{
+    margin-top: 20px ;
+    margin-bottom: 20px ;
+}
+.companytext p{
+    color: gray;
+ line-height: 30px ;
+}
+.companytext button{
+    border: none;
+ border-bottom: 1px solid #0656f7;
+   
+}
+.companytext button:hover{
+   color: rgb(134, 133, 133);
+}
+.footerline{
+width: 100%;
+float: left;
+height: 100px ;
+background-color: #1246ab;
+}
+
+.footerline1{
+  width: 50%;
+  float: left;
+    }
+    .footerlineimage{
+    width: 20%;
+    float: left;
+   padding: 30px ;
+    }
+.footerlineimage img{
+    width: 100%;
+    float: left;
+}
+.footerlinetext{
+    width: 80%;
+    float: left;
+    color: white;
+}
+.footerlinetext h2{
+margin-top: 25px ;
+margin-bottom: 10px ;
+}
+.sign{
+    padding-left: 100px ;
+    padding-top: 32px;
+}
+.sign input {
+   padding: 10px ;
+   width: 300px ;
+}
+.sign button {
+    padding: 10px 15px  ;
+    font-weight: 600;
+   
+ }
+ .sign button:hover{
+  color: rgb(131, 128, 128);
+ }
+ .mainfooter{
+    width: 100%;
+float: left;
+margin-bottom: 10px ;
+padding: 0 10px ;
+padding-top: 50px ;
+border-bottom: 1px solid #c9c6c6;
+    padding-bottom: 30px;
+}
+.smallfooter{
+    width: 20%;
+    float: left;
+}
+.footerimage{
+width: 100%;
+float: left;
+margin-bottom: 10px ;
+}
+.footerimage img{
+    width: 250px;
+} 
+.footer{
+    width: 100%;
+    float: left;
+    
+}.footer p{
+    font-size: 14px ;
+    line-height: 20px ;
+    color: gray;
+}
+.main{
+    width: 10%;
+    float: left;
+}
+
+.maintext{
+    width:90% ;
+    float: left;
+    
+}
+.maintext p{
+    font-size: 14px ;
+    color: gray;
+}
+.main1{
+   padding-top: 20px;
+   padding-bottom: 20px ;
+}
+.store{
+padding-left: 20px ;
+}
+.store ul{
+    float: left;
+}
+.store ul li{
+    list-style: none;
+    margin-top: 20px ;
+    
+}
+.store ul li a{
+    text-decoration: none;
+    color: gray ;
+    font-size: 14px ;
+}
+.store ul li a:hover{
+   color: #0656f7;
+}
+.footer .buttons{
+    width: 45%;
+    float: left;
+    
+}
+.footer .buttonimage{
+    width: 20%;
+    float: left;
+    margin-top: 5px ;
+}
+.footer .buttonimage img {
+  width: 100%;
+}
+.buttontext{
+width: 80%;
+float: left;
+text-align: left;
+padding-left:10px  ;
+}
+
+.footer button{
+background-color: black;
+border-radius: 6px ;
+margin-bottom: 20px ;
+}
+.footer button a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px ;
+    font-weight: 600;
+    }
+ .footer button a small {
+    font-size: 7px ;
+    white-space: nowrap;
+
+ }
+ .footer .apple{
+   background: none;
+   color: black;
+ }
+ .footer .apple a{
+   color: black;
+ 
+  }
+ .footer .black{
+    margin-right: 10px ;
+ }
+ .footer .available{
+    margin-bottom: 20px ;
+ }
+ .social a{
+width: 25px ;
+height: 25px ;
+border-radius: 50%;
+display: inline-block;
+text-align: center;
+line-height: 25px ;
+background-color: #2859b8;
+
+}
+.social a{
+    font-size: 13px ;
+    color: white;
+}
+.social a:hover{
+  background-color: rgb(237, 235, 235) !important;
+}
+.social h4{
+    margin-top: 20px ;
+    margin-bottom: 20px ;
+}
+.bird{
+    background-color: black!important;
+}
+.pin{
+    background-color: rgb(183, 6, 6)!important;
+}
+.link{
+    background-color: rgb(17, 56, 156)!important;
+}
+.tele{
+    background-color: rgb(46, 182, 235)!important;
+}
+.footerend{
+    width: 100%;
+    float: left;
+    height: 30px ;
+    padding: 0 10px ;
+}
+.footerendimage{
+    width: 50%;
+    float: left;
+}
+.footerendimage a{
+   text-decoration: none;
+   color: black;
+   font-weight: 600;
+}
+.footerendimage p{
+  font-size: 12px ;
+  margin-top: 5px ;
+}
+.footerendimage b{
+    color: black;
+    font-size: 12px ;
+  }
+.payment{
+    float: right;
+}
+.payment img{
+width: 100%;
+}
+.scroll-btn{
+    position:absolute;
+    top: -50px;
+    right: 30px ;
+    transition:1s;
+    z-index: 999;
+}
+.scroll-btn.sticky-btn{
+    position: fixed;
+    top:550px;
+    right: 30px ;
+}
+.scroll-btn span{
+    width: 50px ;
+    height: 50px ;
+    border-radius: 50%;
+    background-color: chocolate;
+    color: white ;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px ;
+}
+#scrollIndicator{
+    width: 0%;
+    height: 5px ;
+    background-color: #1246ab;
+    position: fixed;
+    top: 0 ;
+    z-index: 999;
+}
+
+@media screen and (max-width:992px){
+    
+}
